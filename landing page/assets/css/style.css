@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #1e74cf;
+    width: 100%;
+    height: 70px;
+}
+
+.nav {
+    background-color: #8282f5;
+    width: 100%;
+    height: 50px;
+}
+
+main {
+    display: block;
+    place-items: center;
+    /*     background-color: #818e9b; */
+
+}
+
+img {
+    width: 20%;
+    position: relative;
+    border-radius: 10px;
+    animation: MoveUpDown 2s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 20px;
+    }
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url(../img/keybaoard.jpg);
+    background-position: fixed;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 80vh;
+    padding: 120px 70px 70px;
+}
+
+.hero .intro {
+    margin-top: 40px;
+}
+
+.hero .intro h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.hero .intro h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+
+.hero .intro p {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    color: white;
+}
+
+.hero img {
+
+    width: 80%;
+}
+button {
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #007bff;
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 5px;
+    width: 20%;
+    border-color: #007bff;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #125399;
+    transition: 0.3s;
+    cursor: pointer;
+}
+/*  */
