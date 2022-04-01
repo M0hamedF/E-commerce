@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background: url(../img/BG.jpg);
+    background-position: fixed;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+    min-width: 300px;
+    margin-top: 75px;
+    background-color: aliceblue;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 200px;
+    font-weight: 500;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+input {
+    border-radius: 3px;
+    padding: 5px;
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: aliceblue;
+    padding: 7px;
+    border-radius: 5px;
+    width: 30%;
+    border-color: #007bff;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #125399;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.redirect_Signin {
+    font-size: 13px;
+}
+
+.redirect_Signin a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.redirect_Signin a:hover {
+    color: #125399;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@media(max-width:500px) {
+    main {
+        margin: 75px 30px;
+        background-color: aliceblue;
+        min-width: 200px;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .title{
+        font-size: 14.5px;
+    }
+}
